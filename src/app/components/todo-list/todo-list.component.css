@@ -1,0 +1,90 @@
+.todo-list-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-container h1 {
+  color: #333;
+  text-align: center;
+}
+
+.todo-list-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks li {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tasks li.completed {
+  color: #4caf50;
+  text-decoration: line-through;
+}
+
+.tasks li span {
+  user-select: none;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #e91e63;
+  cursor: pointer;
+}
+
+.delete:focus {
+  outline: none;
+}
+
+.vue-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add the Vue logo styles or include an image as needed */
+.add-task-container input,
+.add-task-container button {
+  height: 40px; /* Set a fixed height for both input and button */
+  padding: 0 10px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  font-size: 16px; /* Optional: Adjust font size as needed */
+}
+
+.add-task-container input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.add-task-container button {
+  padding: 0 20px; /* Adjust padding as needed */
+  background-color: #6c4ee7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: none; /* Removes any box-shadow if present to achieve a flatter look */
+}
+
+.add-task-container button:hover {
+  background-color: #45a049;
+}

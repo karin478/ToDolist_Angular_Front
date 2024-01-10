@@ -1,0 +1,20 @@
+<div class="todo-list-container">
+    <h1>To-Do List</h1>
+    
+    <div class="add-task-container">
+      <input type="text" placeholder="Enter a new task" [(ngModel)]="newTask" />
+      <button (click)="addNewTask()">Add Task</button>
+    </div>
+  
+    <ul class="tasks">
+      <li *ngFor="let item of toDoItems" [ngClass]="{'completed': item.isCompleted}">
+        <span>{{ item.title }}</span>
+        <button class="delete" (click)="deleteItem(item.id)">✖</button>
+      </li>
+    </ul>
+  
+    <div *ngIf="toDoItems.length === 0">
+      <p>No to-do items found.</p>
+    </div>
+  </div>
+  

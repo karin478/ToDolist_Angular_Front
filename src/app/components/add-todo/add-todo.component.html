@@ -1,0 +1,7 @@
+<form (ngSubmit)="onAddTodo(addForm)" #addForm="ngForm">
+    <input type="text" ngModel name="title" required placeholder="Title" />
+    <input type="text" ngModel name="description" placeholder="Description" />
+    <input type="datetime-local" ngModel name="dueDate" placeholder="Due Date" />
+    <button type="submit">Add ToDo</button>
+  </form>
+  
